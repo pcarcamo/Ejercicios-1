@@ -1,0 +1,17 @@
+ string A1, A2, A3;
+       
+        Console.WriteLine("escribe la primera letra");
+        A1 = Console.ReadLine(); 
+		
+		Console.WriteLine("escribe la segunda letra");
+        A2 = Console.ReadLine();   
+				 
+		Console.WriteLine("escribe la tercera letra");
+        A3 = Console.ReadLine();
+ 
+        Console.WriteLine("{0} {1} {2} ",
+		A3, A2, A1);
+        Console.WriteLine();
+ 
+    }
+}
