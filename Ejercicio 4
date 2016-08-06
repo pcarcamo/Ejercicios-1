@@ -1,0 +1,61 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+		                bool salir = false;
+            int num1 = 0;
+            int num2 = 0;
+            int respuesta=0;
+            string operacion = string.Empty;
+            while (!salir)
+            {
+                Console.WriteLine("Ingresar el primer numero");
+                num1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingresar el segundo numero");
+                num2 = Convert.ToInt32(Console.ReadLine());
+
+
+                Console.WriteLine("Elija el tipo de operacion que desea");
+                Console.WriteLine("Oprima para SUMAR = S");
+                Console.WriteLine("Oprima para RESTAR = R");
+                Console.WriteLine("Oprima para MULTIPLICAR = M");
+                Console.WriteLine("Oprima para DIVIDIR = D");
+                operacion = Console.ReadLine();
+
+                switch (operacion)
+                {
+                    case "S":
+                        respuesta = num1 + num2;
+                        break;
+                    case "R":
+                        respuesta = num1 - num2;
+                        break;
+                    case "M":
+                        respuesta = num1 * num2;
+                        break;
+                    case "D":
+                        respuesta = num1 / num2;
+                        break;
+
+                    default:
+                        respuesta = 0;
+                        break;
+                }
+
+                Console.WriteLine(String.Format("Su prespuesta es: {0}", respuesta));
+
+
+
+
+                Console.WriteLine("Precione  C  para continuar o ENTER para salir");
+                if (Console.ReadLine() != "C")
+                    salir = true;
+               
+            }
+
+        }
+    }
+
+
