@@ -1,0 +1,22 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+		     float num;
+        Console.Write("Escriba el alto que se desea el trianlgulo");
+        int alto = Convert.ToInt32(Console.ReadLine());
+        int ancho = alto;
+        for (int a = 1; a <= alto; a++)
+        {
+            for (int b = 1; b <= ancho; b++)
+            Console.Write("{0} ", num = alto, ancho);
+            Console.WriteLine();
+            ancho = ancho - 1;
+		        }
+        Console.ReadLine();
+    }
+
+   }
+
