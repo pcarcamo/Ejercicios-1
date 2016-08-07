@@ -1,0 +1,36 @@
+using System;
+
+class ejercicio6
+{
+
+    static void Main()
+    {
+
+        float num1, num2;
+
+        Console.Write("Ingrese el primer número:");
+        Console.WriteLine();
+        num1 = float.Parse(Console.ReadLine());
+
+        Console.Write("Ingrese el segundo numero:");
+        Console.WriteLine();
+        num2 = float.Parse(Console.ReadLine());
+
+        while (num1 == 0 && num2==0)
+        {
+            
+            num1 = float.Parse(Console.ReadLine());
+            num2 = float.Parse(Console.ReadLine());
+        }
+
+        if (num1 % 2 == 0 && num2 % 2 == 0)
+            Console.Write("El {0} y {1}  es verdadero, es par", num1, num2 );
+            
+        else
+            Console.Write("El {0} y {1 }  es falso, es impar", num1, num2);
+
+        Console.Read();
+
+
+    }
+}
